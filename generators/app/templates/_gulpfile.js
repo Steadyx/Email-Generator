@@ -23,13 +23,12 @@ gulp.task( 'serve', function() {
 
   browserSync.init( {
 
-    proxy: 'localhost:3001/build'
+    proxy: 'localhost:3000/build'
 
   } )
 
   gulp.watch( path.sass, [ 'sass' ] );
-  gulp.watch( path.html )
-    .on( 'change', reload );
+
 } );
 
 gulp.task( 'inlineHTML', function() {
@@ -43,13 +42,16 @@ gulp.task( 'inlineHTML', function() {
       applyTableAttributes: true,
       removeHtmlSelectors: false
     } ) )
-    .pipe( gulp.dest( './src/build' ) );
+    .pipe( gulp.dest( './src/build' ) )
+    .pipe( browserSync.stream() );
+
 } );
 
 gulp.task( 'zip', function() {
 
   return gulp.src( './src/build/**' )
     .pipe( zip( 'build.zip' ) )
+    .pipe( browserSync.stream() )
     .pipe( gulp.dest( 'production' ) );
 
 } )
@@ -70,9 +72,9 @@ gulp.task( 'sass', function() {
       includePaths: [ 'styles' ].concat( neat )
     } ) )
     .pipe( gulp.dest( './src/css' ) )
+    .pipe( browserSync.stream() )
     .pipe( gulp.dest( './src/build/css' ) )
 
-    .pipe( browserSync.stream() )
     .on( 'error', sass.logError );
 
   gulp.watch( path.html )

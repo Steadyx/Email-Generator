@@ -1,26 +1,27 @@
 @media only screen and (max-width:580px) {
-    .responsive-align {
-        width     : 100%;
-        text-align: -webkit-center;
-        padding   : 0 20px;
-    }
+  .responsive-align {
+    width     : 100%;
+    text-align: -webkit-center;
+    padding   : 0 20px;
+  }
 
-    .responsive-text {
-        width     : 100%;
-        text-align: -webkit-center;
-    }
+  .responsive-text {
+    width     : 100%;
+    text-align: -webkit-center;
+  }
 
-    .responsive-inner-text {
-        width     : 100%;
-        max-width : 400px;
-        padding   : 0 20px;
-        text-align: -webkit-left;
-    }
+  .responsive-inner-text {
+    width     : 100%;
+    max-width : 400px;
+    padding   : 0 20px;
+    text-align: -webkit-left;
+  }
 
-    .fluidimage-large {
-        max-width: 200px;
-    }
+  .fluidimage-large {
+    max-width: 200px;
+  }
 }
+/* For smaller screens uncomment and edit the following code */
 // @media only screen and (max-width:480px) {
 //     .responsive-align {
 //         width     : 100%;
