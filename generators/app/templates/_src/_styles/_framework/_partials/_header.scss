@@ -1,0 +1,9 @@
+.header-container {
+    width           : 100%;
+    background-color: $carnation;
+
+    .header {
+        @extend .header-container;
+        color: $Wild-sand;
+    }
+}

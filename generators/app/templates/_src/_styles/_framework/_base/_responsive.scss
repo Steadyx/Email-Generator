@@ -1,0 +1,44 @@
+@media only screen and (max-width:580px) {
+    .responsive-align {
+        width     : 100%;
+        text-align: -webkit-center;
+        padding   : 0 20px;
+    }
+
+    .responsive-text {
+        width     : 100%;
+        text-align: -webkit-center;
+    }
+
+    .responsive-inner-text {
+        width     : 100%;
+        max-width : 400px;
+        padding   : 0 20px;
+        text-align: -webkit-left;
+    }
+
+    .fluidimage-large {
+        max-width: 200px;
+    }
+}
+// @media only screen and (max-width:480px) {
+//     .responsive-align {
+//         width     : 100%;
+//         text-align: -webkit-center;
+//     }
+// }
+// @media only screen and (max-width:380px) {
+//     .responsive-align {
+//         width     : 100%;
+//         max-width : 200px;
+//         text-align: -webkit-center;
+//     }
+// }
+// @media only screen and (max-width:320px) {
+//     .responsive-align {
+//         width     : 100%;
+//         max-width : 200px;
+//         text-align: -webkit-center;
+//     }
+// }
+// }

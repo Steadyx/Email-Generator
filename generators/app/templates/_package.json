@@ -1,0 +1,29 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.12.0",
+    "eslint-plugin-html": "^1.7.0",
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-zip": "^3.2.0",
+    "node-neat": "^1.7.2",
+    "pug": "^2.0.0-beta6"
+  }
+}
