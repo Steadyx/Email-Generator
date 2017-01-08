@@ -47,7 +47,7 @@
 			"mocha": true
 		}
 	},
-	"repository": "Steadyx/generator-easyemail",
+	"repository": "Steadyx/Email-Generator",
 	"scripts": {
 		"prepublish": "gulp prepublish",
 		"test": "gulp"
