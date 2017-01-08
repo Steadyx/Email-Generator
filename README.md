@@ -1,4 +1,4 @@
-generator-email [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+generator-email [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 =========
 > Creates a email development folder which scaffolds out everything you will need. I've included SASS and gulp to help automate otherwise tedious processes such as maintaining code that has to be inline, table attributes that need to be manually inputed.
 
@@ -12,7 +12,7 @@ generator-email [![NPM version][npm-image]][npm-url] [![Build Status][travis-ima
 <li>Saves all of your work from the build directory and then zips
    them up so you can send them over to litmus or Email on Acid.
 </li>
-<li>Comes included with a little CSSS framework to help you start
+<li>Comes included with a little CSS framework to help you start
    creating!
 </li>
 <ul>
