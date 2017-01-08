@@ -1,4 +1,4 @@
-generator-easyemail [[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build status][appveyor-image]][appveyor-url]
+generator-easyemail [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build status][appveyor-image]][appveyor-url]
 =========
 > Creates a email development folder which scaffolds out everything you will need. I've included SASS and gulp to help automate otherwise tedious processes such as maintaining code that has to be inline, table attributes that need to be manually inputed.
 
@@ -23,13 +23,13 @@ First, install [Yeoman](http://yeoman.io) and generator-email using [npm](https:
 
 ```bash
 $ npm install -g yo
-$ npm install -g generator-easyemail
+$ npm install -g generator-email
 ```
 
 Then generate your new project! (keep in mind that you have to create a project folder to install all of the files in):
 
 ```bash
-$ yo easyemail
+$ yo eemail
 ```
 
 
@@ -100,11 +100,8 @@ The folder structure is as follows:
 MIT © [Edward Kemp]()
 
 
-[npm-image]: https://badge.fury.io/js/generator-email.svg
-[npm-url]: https://npmjs.org/package/generator-email
-[travis-image]: https://travis-ci.org/Steadyx/generator-email.svg?branch=master
-[travis-url]: https://travis-ci.org/Steadyx/generator-email
-[daviddm-image]: https://david-dm.org/Steadyx/generator-email.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/Steadyx/generator-email
-[coveralls-image]: https://coveralls.io/repos/Steadyx/generator-email/badge.svg
-[coveralls-url]: https://coveralls.io/r/Steadyx/generator-email
+[npm-url]: https://npmjs.org/package/generator-easyemail
+[downloads-image]: http://img.shields.io/npm/dm/generator-easyemail.svg
+[npm-image]: http://img.shields.io/npm/v/generator-easyemail.svg
+[appveyor-image]:https://ci.appveyor.com/api/projects/status/bsu9w9ar8pboc2nj?svg=true
+[appveyor-url]:https://ci.appveyor.com/project/Steadyx/generator-easyemail
