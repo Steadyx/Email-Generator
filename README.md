@@ -1,4 +1,4 @@
-generator-email [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
+generator-easyemail [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 =========
 > Creates a email development folder which scaffolds out everything you will need. I've included SASS and gulp to help automate otherwise tedious processes such as maintaining code that has to be inline, table attributes that need to be manually inputed.
 
@@ -23,13 +23,13 @@ First, install [Yeoman](http://yeoman.io) and generator-email using [npm](https:
 
 ```bash
 $ npm install -g yo
-$ npm install -g generator-email
+$ npm install -g generator-easyemail
 ```
 
 Then generate your new project! (keep in mind that you have to create a project folder to install all of the files in):
 
 ```bash
-$ yo email
+$ yo easyemail
 ```
 
 
