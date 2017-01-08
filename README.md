@@ -23,13 +23,13 @@ First, install [Yeoman](http://yeoman.io) and generator-email using [npm](https:
 
 ```bash
 $ npm install -g yo
-$ npm install -g generator-email
+$ npm install -g generator-easyemail
 ```
 
 Then generate your new project! (keep in mind that you have to create a project folder to install all of the files in):
 
 ```bash
-$ yo email
+$ yo easyemail
 ```
 
 
