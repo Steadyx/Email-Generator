@@ -1,54 +1,56 @@
 {
-	"name": "generator-easyemail",
-	"version": "0.0.1",
-	"description": "Creates a email development folder which scaffolds out everything you will need.",
-	"homepage": "",
-	"author": {
-		"name": "Edward Kemp",
-		"email": "edwardlanekemp@gmail.com",
-		"url": "https://www.npmjs.com/package/generator-easyemail"
-	},
-	"files": ["generators"],
-	"main": "generators/index.js",
-	"keywords": [
-		"email",
-		"yeoman-generator",
-		"email template",
-		"htmlemail",
-		"email generator",
-		"sass",
-		"email gulp"
-	],
-	"dependencies": {
-		"yeoman-generator": "^1.0.0",
-		"chalk": "^1.1.3",
-		"yosay": "^1.2.1"
-	},
-	"devDependencies": {
-		"yeoman-test": "^1.6.0",
-		"yeoman-assert": "^2.2.1",
-		"eslint": "^3.1.1",
-		"eslint-config-xo-space": "^0.15.0",
-		"gulp": "^3.9.0",
-		"gulp-eslint": "^3.0.1",
-		"gulp-exclude-gitignore": "^1.0.0",
-		"gulp-line-ending-corrector": "^1.0.1",
-		"gulp-istanbul": "^1.0.0",
-		"gulp-mocha": "^3.0.1",
-		"gulp-plumber": "^1.0.0",
-		"gulp-nsp": "^2.1.0",
-		"gulp-coveralls": "^0.1.0"
-	},
-	"eslintConfig": {
-		"extends": "xo-space",
-		"env": {
-			"mocha": true
-		}
-	},
-	"repository": "Steadyx/generator-email",
-	"scripts": {
-		"prepublish": "gulp prepublish",
-		"test": "gulp"
-	},
-	"license": "MIT"
+  "name": "generator-easyemail",
+  "version": "0.0.2",
+  "description": "Creates a email development folder which scaffolds out everything you will need.",
+  "homepage": "",
+  "author": {
+    "name": "Edward Kemp",
+    "email": "edwardlanekemp@gmail.com",
+    "url": "https://www.npmjs.com/package/generator-easyemail"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "email",
+    "yeoman-generator",
+    "email template",
+    "htmlemail",
+    "email generator",
+    "sass",
+    "email gulp"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^1.0.0",
+    "chalk": "^1.1.3",
+    "yosay": "^1.2.1"
+  },
+  "devDependencies": {
+    "yeoman-test": "^1.6.0",
+    "yeoman-assert": "^2.2.1",
+    "eslint": "^3.1.1",
+    "eslint-config-xo-space": "^0.15.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-istanbul": "^1.0.0",
+    "gulp-mocha": "^3.0.1",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-coveralls": "^0.1.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "Steadyx/generator-email",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "MIT"
 }
