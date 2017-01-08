@@ -6,12 +6,18 @@
 	"author": {
 		"name": "Edward Kemp",
 		"email": "edwardlanekemp@gmail.com",
-		"url": ""
+		"url": "https://www.npmjs.com/package/generator-easyemail"
 	},
 	"files": ["generators"],
 	"main": "generators/index.js",
 	"keywords": [
-		"", "yeoman-generator"
+		"email",
+		"yeoman-generator",
+		"email template",
+		"htmlemail",
+		"email generator",
+		"sass",
+		"email gulp"
 	],
 	"dependencies": {
 		"yeoman-generator": "^1.0.0",
