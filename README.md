@@ -104,4 +104,4 @@ MIT © [Edward Kemp]()
 [downloads-image]: http://img.shields.io/npm/dm/generator-easyemail.svg
 [npm-image]: http://img.shields.io/npm/v/generator-easyemail.svg
 [appveyor-image]:https://ci.appveyor.com/api/projects/status/bsu9w9ar8pboc2nj?svg=true
-[appveyor-url]:https://ci.appveyor.com/project/Steadyx/email-generator
+[appveyor-url]:https://ci.appveyor.com/project/Steadyx/Email-Generator
