@@ -1,0 +1,63 @@
+@media only screen and (max-width:580px) {
+  .responsive-align {
+    width     : 100%;
+    text-align: -webkit-center;
+    padding   : 0 20px;
+  }
+
+  .responsive-text {
+    width     : 100%;
+    text-align: -webkit-center;
+  }
+
+  .responsive-inner-text {
+    width     : 100%;
+    max-width : 400px;
+    padding   : 0 20px;
+    text-align: -webkit-left;
+  }
+
+  .fluidimage-large {
+    max-width: 200px;
+  }
+
+  a[x-apple-data-detectors] {
+    color          : inherit !important;
+    text-decoration: none !important;
+    font-size      : inherit !important;
+    font-family    : inherit !important;
+    font-weight    : inherit !important;
+    line-height    : inherit !important;
+  }
+}
+/* For smaller screens uncomment and edit the following code */
+@media only screen and (max-width:480px) {
+  a[x-apple-data-detectors] {
+    color          : inherit !important;
+    text-decoration: none !important;
+    font-size      : inherit !important;
+    font-family    : inherit !important;
+    font-weight    : inherit !important;
+    line-height    : inherit !important;
+  }
+}
+@media only screen and (max-width:380px) {
+  a[x-apple-data-detectors] {
+    color          : inherit !important;
+    text-decoration: none !important;
+    font-size      : inherit !important;
+    font-family    : inherit !important;
+    font-weight    : inherit !important;
+    line-height    : inherit !important;
+  }
+}
+@media only screen and (max-width:320px) {
+  a[x-apple-data-detectors] {
+    color          : inherit !important;
+    text-decoration: none !important;
+    font-size      : inherit !important;
+    font-family    : inherit !important;
+    font-weight    : inherit !important;
+    line-height    : inherit !important;
+  }
+}

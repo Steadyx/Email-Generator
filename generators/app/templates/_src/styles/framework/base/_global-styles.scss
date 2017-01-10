@@ -1,0 +1,50 @@
+body {
+    margin                  : 0;
+    padding                 : 0;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust    : none;
+    -moz-text-size-adjust   : none;
+    text-size-adjust        : none;
+}
+
+table td {
+    border-collapse: collapse !important;
+}
+
+table,
+td {
+    mso-table-lspace: 0;
+    mso-table-rspace: 0;
+}
+
+a,
+div,
+li,
+p,
+td {
+    -webkit-text-size-adjust: none;
+}
+
+table {
+    padding: 5px;
+}
+
+a[x-apple-data-detectors] {
+    color          : inherit !important;
+    text-decoration: none !important;
+    font-size      : inherit !important;
+    font-family    : inherit !important;
+    font-weight    : inherit !important;
+    line-height    : inherit !important;
+}
+
+img {
+    display               : block;
+    text-decoration       : none;
+    -ms-interpolation-mode: bicubic;
+    outline               : none;
+}
+
+a img {
+    border: none;
+}
