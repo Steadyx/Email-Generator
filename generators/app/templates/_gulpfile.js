@@ -3,7 +3,7 @@ var path = require('path');
 var zip = require('gulp-zip');
 var pug = require('gulp-pug');
 var sass = require('gulp-sass');
-var imageMin = require('gulp-imagemin')
+var imageMin = require('gulp-imagemin');
 var inlineCss = require('gulp-inline-css');
 var neat = require('node-neat')
 	.includePaths;
@@ -15,10 +15,10 @@ var path = {
 
 	html: './src/*.html',
 	allHTML: './**/*.html',
-	buildHTML: './src/build/*.html'
-	pug: './src/**/*.pug'
+	buildHTML: './src/build/*.html',
+	pug: './src/**/*.pug',
 	buildCSS: './src/build/css/*.css',
-	sass: './src/styles/**/*.scss'
+	sass: './src/styles/**/*.scss',
 	buildPath: './src/build'
 
 };
@@ -35,18 +35,18 @@ gulp.task('serve', function () {
 
 gulp.task('inlineHTML', function () {
 	gulp
-		.src(path.html)
+		.src('./src/*.html')
 		.pipe(inlineCss({
 			preserveMediaQueries: true,
 			applyStyleTags: true,
 			applyLinkTags: true,
 			removeStyleTags: false,
 			removeLinkTags: false,
-			applyTableAttributes: false,
+			applyTableAttributes: true,
 			removeHtmlSelectors: false,
 			applyWidthAttributes: false
 		}))
-		.pipe(gulp.dest(path))
+		.pipe(gulp.dest('./src/build'))
 		.pipe(browserSync.stream());
 
 });
@@ -98,9 +98,7 @@ gulp
 
 	});
 
-gulp.tast('minifyImages', function () {
-	return gulp.src()
-})
+
 
 gulp.task('watch', function () {
 

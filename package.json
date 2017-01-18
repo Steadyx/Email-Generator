@@ -24,8 +24,9 @@
     "easy email"
   ],
   "dependencies": {
-    "yeoman-generator": "^1.0.0",
     "chalk": "^1.1.3",
+    "gulp-imagemin": "^3.1.1",
+    "yeoman-generator": "^1.0.0",
     "yosay": "^1.2.1"
   },
   "devDependencies": {

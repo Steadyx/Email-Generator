@@ -19,62 +19,62 @@ $heading-font-size: 44px;
 $heading-line-height: 20px;
 /*Font-class-Colors*/
 .font-carnation {
-    color: $carnation;
+  color: $carnation;
 }
 
 .font-wild-sand {
-    color: $Wild-sand;
+  color: $Wild-sand;
 }
 
 .font-alto {
-    color: $alto;
+  color: $alto;
 }
 
 .font-white {
-    color: $white;
+  color: $white;
 }
 
 .font-black {
-    color: $black;
+  color: $black;
 }
 
 .font-red-violet {
-    color: $red-violet;
+  color: $red-violet;
 }
 
 .align-left {
-    text-align: -webkit-left;
-    width     : 50%;
-    padding   : 0;
+  text-align: -webkit-left;
+  width     : 50%;
+  padding   : 0;
 }
 
 .align-center {
-    text-align: -webkit-center;
-    width     : 50%;
-    padding   : 0;
+  text-align: -webkit-center;
+  width     : 50%;
+  padding   : 0;
 
-    span {
-        font-size: $primary-font-size;
-    }
+  span {
+    font-size: $primary-font-size;
+  }
 }
 
 .align-right {
-    text-align: -webkit-right;
-    width     : 50%;
-    padding   : 0;
-    font-size : $primary-line-height;
+  text-align: -webkit-right;
+  width     : 50%;
+  padding   : 0;
+  font-size : $primary-line-height;
 }
 
 .sub-text {
-    font-size: $secondary-font-size;
+  font-size: $secondary-font-size;
 }
 
 .heading-small {
-    font-size  : 20px;
-    font-weight: $primary-font-weight;
+  font-size  : 20px;
+  font-weight: $primary-font-weight;
 }
 
 .heading-large {
-    font-size  : 40px;
-    font-weight: $primary-font-weight;
+  font-size  : 40px;
+  font-weight: $primary-font-weight;
 }

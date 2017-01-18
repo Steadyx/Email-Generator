@@ -2,6 +2,11 @@
   width: 100%;
 }
 
+.container {
+  max-width: 600px;
+  width    : 100%;
+}
+
 .mobileshow {
   display   : none;
   overflow  : hidden;
@@ -47,6 +52,7 @@
 .column-container {
   max-width: 600px;
   width    : 100%;
+  padding  : 0;
 
   .inner {
     max-width: 600px;
@@ -57,14 +63,12 @@
         padding: 0;
       }
 
-      .heading-small {
-        font-size: $primary-font-size;
+      .heading {
+        font-size: $heading-font-size;
       }
 
-      .heading-medium {}
-
-      .heading-large {
-        font-weight: $regular;
+      .primary-text {
+        font-size: $primary-font-size;
       }
 
       .sub-text {
@@ -78,8 +82,6 @@
       .row-right {
         float: right;
       }
-
-      .row-center {}
 
       .column-small {
         width: 25%;
