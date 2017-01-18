@@ -31,7 +31,7 @@ $ npm install -g generator-email
 Then generate your new project! (keep in mind that you have to create a project folder to install all of the files in):
 
 ```bash
-$ yo email
+$ yo easyemail
 ```
 
 
