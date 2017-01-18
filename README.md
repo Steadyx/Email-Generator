@@ -1,6 +1,6 @@
 generator-easyemail [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build status][appveyor-image]][appveyor-url]
 =========
-> Creates a email development folder which scaffolds out everything you will need. I've included SASS and gulp to help automate otherwise tedious processes such as maintaining code that has to be inline, table attributes that need to be manually inputed.
+> Creates a email development folder which scaffolds out everything you will need. I've included SASS and gulp to help automate otherwise tedious processes such as maintaining code that has to be inline, table attributes that need to be manually included.
 
 >Be Aware that this is an on going project and you are likely to encounter errors or you may spot something out of the ordinary, If that's the case please let me know.
 
