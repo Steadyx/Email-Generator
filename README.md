@@ -34,13 +34,15 @@ Then generate your new project! (keep in mind that you have to create a project 
 $ yo easyemail
 ```
 
-
 Once all of the files and packages have finished installing just run gulp in your current directory, this will start up a server where you can begin to modify everything to your liking.
 
 ```bash
 $ gulp
 ```
 
+####Future Updates
+
+I am currently working on this generator to generate more options, In future updates I am going to allow you all to generate different responsive layout techniques. I will also be adding options for you all to choose from different CSS frameworks including **LESS**, **SASS** or **SCSS**. As for HTML I am going to be adding HTML template framworks such as **pug**, **handlebars**,  **mustache**, **EJS** and more!  If you have anything that you think you might need get in contact with me and I will be sure to make it an option for every one.
 
 ####Folder Structure
 The folder structure is as follows:
