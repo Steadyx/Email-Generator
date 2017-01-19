@@ -21,11 +21,11 @@ generator-easyemail [![NPM version][npm-image]][npm-url] [![Downloads][downloads
 
 ### Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-email using [npm](https://www.npmjs.com/) (I assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-easyemail using [npm](https://www.npmjs.com/) (I assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 $ npm install -g yo
-$ npm install -g generator-email
+$ npm install -g generator-easyemail
 ```
 
 Then generate your new project! (keep in mind that you have to create a project folder to install all of the files in):
