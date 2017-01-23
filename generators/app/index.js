@@ -8,38 +8,37 @@ module.exports = Generator.extend({
 		// Have Yeoman greet the user.
 		this.log(yosay('Welcome to the ' + chalk.yellow('easyemail') + ' generator!'));
 
-		var prompts = [
-			{
-				type: 'input',
-				name: 'name',
-				message: 'Whats the name of your project going to be?',
-				default: this.appname
-      }, {
-				type: 'list',
-				name: 'styles',
-				message: 'What CSS framework would you like to use?',
-				choices: [{
-					name: 'CSS',
-					value: 'includeCss'
-				}, {
-					name: 'Sass',
-					value: 'includeSass',
-				}, {
-					name: 'Less',
-					value: 'includeLess',
-				}, {
-					name: 'Scss',
-					value: 'includeScss',
-				}]
-			}
-    ];
+		var prompts = [{
+
+			type: 'input',
+			name: 'name',
+			message: 'Whats the name of your project going to be?',
+			default: this.appname
+			// }, {
+			// 	type: 'list',
+			// 	name: 'styles',
+			// 	message: 'What CSS framework would you like to use?',
+			// 	choices: [{
+			// 		name: 'CSS',
+			// 		value: 'includeCss'
+			// 	}, {
+			// 		name: 'Sass',
+			// 		value: 'includeSass',
+			// 	}, {
+			// 		name: 'Less',
+			// 		value: 'includeLess',
+			// 	}, {
+			// 		name: 'Scss',
+			// 		value: 'includeScss',
+			// 	}]
+			// }
+						}];
 
 		return this.prompt(prompts)
 			.then(function (answers) {
 				// To access users configs later use this.answers.prop;
 				this.answers = answers;
 
-				this.log(this.answers.styles)
 
 			}.bind(this));
 	},
@@ -51,15 +50,22 @@ module.exports = Generator.extend({
 		this
 			.fs
 			.copyTpl(this.templatePath('_package.json'), this.destinationPath('package.json'), {
+
+
 				name: this.answers.name
-			});
+
+			})
+
+
 		this
 			.fs
 			.copyTpl(this.templatePath('_.gitignore'), this.destinationPath('.gitignore'));
+
 	},
+
+
 	// Application Files
 	app: function () {
-
 
 		this
 			.fs
@@ -70,57 +76,45 @@ module.exports = Generator.extend({
 		this.fs
 			.copyTpl(this.templatePath('_src/_index.html'), this.destinationPath('src/index.html'), {
 				name: this.answers.name
-			});
+			})
 
 		this.fs.copy(this.templatePath('_gulpfile.js'), this.destinationPath('gulpfile.js'));
 
 		// CSS Framework - BASE
-		if (this.answers.styles === 'includeScss') {
+		// if (this.answers.styles === 'includeScss') {
 
+		this
+			.fs
+			.copyTpl(this.templatePath('_src/_styles/_main.scss'), this.destinationPath('src/styles/main.scss'));
+		this
+			.fs
+			.copyTpl(this.templatePath('_src/_styles/_framework/_base/_font-styles.scss'), this.destinationPath('src/styles/framework/base/_font-styles.scss'));
+		this
+			.fs
+			.copyTpl(this.templatePath('_src/_styles/_framework/_base/_global-styles.scss'), this.destinationPath('src/styles/framework/base/_global-styles.scss'));
+		this
+			.fs
+			.copyTpl(this.templatePath('_src/_styles/_framework/_base/_layout.scss'), this.destinationPath('src/styles/framework/base/_layout.scss'));
+		this
+			.fs
+			.copyTpl(this.templatePath('_src/_styles/_framework/_base/_responsive.scss'), this.destinationPath('src/styles/framework/base/_responsive.scss'));
 
-			this.fs.copyTpl(this.templatePath('_src/_styles/_framework/_**/_*.scss'), this.destinationPath('_src/_styles/_framework/_**/_*.scss'))
+		// CSS Framework - MODULES
 
-			this
-				.fs
-				.copyTpl(this.templatePath('_src/_styles/_main.scss'), this.destinationPath('src/styles/main.scss'));
-			this
-				.fs
-				.copyTpl(this.templatePath('_src/_styles/_framework/_base/_font-styles.scss'), this.destinationPath('src/styles/framework/base/_font-styles.scss'));
-			this
-				.fs
-				.copyTpl(this.templatePath('_src/_styles/_framework/_base/_global-styles.scss'), this.destinationPath('src/styles/framework/base/_global-styles.scss'));
-			this
-				.fs
-				.copyTpl(this.templatePath('_src/_styles/_framework/_base/_layout.scss'), this.destinationPath('src/styles/framework/base/_layout.scss'));
-			this
-				.fs
-				.copyTpl(this.templatePath('_src/_styles/_framework/_base/_responsive.scss'), this.destinationPath('src/styles/framework/base/_responsive.scss'));
-
-			// CSS Framework - MODULES
-
-			this
-				.fs
-				.copyTpl(this.templatePath('_src/_styles/_framework/_modules/_colors.scss'), this.destinationPath('src/styles/framework/modules/_colors.scss'));
-			this
-				.fs
-				.copyTpl(this.templatePath('_src/_styles/_framework/_partials/_footer.scss'), this.destinationPath('src/styles/framework/partials/_footer.scss'));
-			this
-				.fs
-				.copyTpl(this.templatePath('_src/_styles/_framework/_partials/_header.scss'), this.destinationPath('src/styles/framework/partials/_header.scss'));
-			this
-				.fs
-				.copyTpl(this.templatePath('_src/_styles/_framework/_partials/_mid-section.scss'), this.destinationPath('src/styles/framework/partials/_mid-section.scss'));
-
-		}
-
-		if (this.answers.styles === 'includeCss') {
-			this
-				.fs
-				.copyTpl(this.templatePath('_src/_styles/_css/_main.css'), this.destinationPath('src/styles/main.css'));
-		}
+		this
+			.fs
+			.copyTpl(this.templatePath('_src/_styles/_framework/_modules/_colors.scss'), this.destinationPath('src/styles/framework/modules/_colors.scss'));
+		this
+			.fs
+			.copyTpl(this.templatePath('_src/_styles/_framework/_partials/_footer.scss'), this.destinationPath('src/styles/framework/partials/_footer.scss'));
+		this
+			.fs
+			.copyTpl(this.templatePath('_src/_styles/_framework/_partials/_header.scss'), this.destinationPath('src/styles/framework/partials/_header.scss'));
 
 	},
+
 	install: function () {
 		this.installDependencies();
 	}
+
 });
