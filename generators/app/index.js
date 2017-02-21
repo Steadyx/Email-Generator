@@ -104,12 +104,6 @@ module.exports = Generator.extend({
 		this
 			.fs
 			.copyTpl(this.templatePath('_src/_styles/_framework/_modules/_colors.scss'), this.destinationPath('src/styles/framework/modules/_colors.scss'));
-		this
-			.fs
-			.copyTpl(this.templatePath('_src/_styles/_framework/_partials/_footer.scss'), this.destinationPath('src/styles/framework/partials/_footer.scss'));
-		this
-			.fs
-			.copyTpl(this.templatePath('_src/_styles/_framework/_partials/_header.scss'), this.destinationPath('src/styles/framework/partials/_header.scss'));
 
 	},
 

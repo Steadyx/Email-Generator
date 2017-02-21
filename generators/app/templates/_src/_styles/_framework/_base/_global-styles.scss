@@ -28,7 +28,7 @@ td {
 }
 
 table {
-  padding: 5px;
+  padding: 0;
 }
 
 a[x-apple-data-detectors] {
@@ -41,7 +41,7 @@ a[x-apple-data-detectors] {
 }
 
 img {
-  display               : block;
+  display               : inline-block;
   text-decoration       : none;
   -ms-interpolation-mode: bicubic;
   outline               : none;
