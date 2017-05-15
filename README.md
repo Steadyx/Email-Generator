@@ -19,32 +19,42 @@ generator-easyemail [![NPM version][npm-image]][npm-url] [![Downloads][downloads
 </li>
 <ul>
 
-### Installation
-
-First, install [Yeoman](http://yeoman.io) and generator-easyemail using [npm](https://www.npmjs.com/) (I assume you have pre-installed [node.js](https://nodejs.org/)).
-
+### **Installation**
+This project now uses [yarn](https://www.npmjs.com/package/yarn) to install packages, so you will need to do this before proceeding to any of the other steps.
+```bash
+$ npm install -g yarn
+```
+Now install [Yeoman](http://yeoman.io) and generator-easyemail using [npm](https://www.npmjs.com/) (I assume you have pre-installed [node.js](https://nodejs.org/)).
 ```bash
 $ npm install -g yo
 $ npm install -g generator-easyemail
 ```
-
+(Optional) - This project has a small and simple server built with express, if you plan on making changes to the server you can automate not having to stop and restart the server everytime you make some adjustments.
+```bash
+$ npm install -g nodemon
+```
 Then generate your new project! (keep in mind that you have to create a project folder to install all of the files in):
 
 ```bash
 $ yo easyemail
 ```
-
-Once all of the files and packages have finished installing just run gulp in your current directory, this will start up a server where you can begin to modify everything to your liking.
-
+If you've followed the optional step or you already have nodemon installed in your packages, run nodemon to begin watching your server.
+```bash
+$ nodemon
+```
+Once all of the files and packages have finished installing just run gulp in your current directory, this will start up a proxy server and you will automatically open up a new window to your perferred browser.
 ```bash
 $ gulp
 ```
+####**Current Updates**
+I have started working on this project again, I have added an option to alllow you to choose from three templates. These include a One Column Layout, Two Column Layout, and a Three Column Layout. Look at the following pictures to get a better persepective.
 
-####Future Updates
+![One Column Layout](https://lh3.googleusercontent.com/-BYVhLm5LlyQ/WRls1eC_m8I/AAAAAAAAAaw/UozNYKV79bsSTUEq0gGRk4BCxzR9Ft7sgCLcB/s400/one-col.png "one-col.png") ![Two Column Layout](https://lh3.googleusercontent.com/-wUAh25Z-EdQ/WRltVezvNWI/AAAAAAAAAa8/vUzPIdRSeSkzqj1vMGB6ka41OEUdWt4VQCLcB/s400/two-cols.png "two-cols.png") ![Three Column Layout](https://lh3.googleusercontent.com/-M7F-_SLwsU0/WRltguJGjcI/AAAAAAAAAbE/NflVd6aiVmMWz4NzqyimkLINPBhCSjHaQCLcB/s400/three-cols.png "three-cols.png")
 
+####**Future Updates**
 I am currently working on this generator to generate more options, In future updates I am going to allow you all to generate different responsive layout techniques. I will also be adding options for you all to choose from different CSS frameworks including **LESS**, **SASS** or **SCSS**. As for HTML I am going to be adding HTML template framworks such as **pug**, **handlebars**,  **mustache**, **EJS** and more!  If you have anything that you think you might need get in contact with me and I will be sure to make it an option for every one.
 
-####Folder Structure
+####**Folder Structure**
 The folder structure is as follows:
 
 ```
